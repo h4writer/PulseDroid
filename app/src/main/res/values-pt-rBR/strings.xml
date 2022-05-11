@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PulseDroid</string>
+    <string name="auto_start">Inicio automático</string>
+    <string name="playback_service_status">Reprodução PulseDroid %1$s</string>
+    <string name="playback_status_starting">Iniciada</string>
+    <string name="playback_status_buffering">Carregando</string>
+    <string name="playback_status_playing">Reproduzindo</string>
+    <string name="playback_status_stopping">Parando</string>
+    <string name="playback_status_stopped">Parado</string>
+    <string name="playback_service_label">Reprodução PulseDroid</string>
+    <string name="service_notification_channel">pulsedroid_service</string>
+    <string name="btn_play">Conectar e Reproduzir</string>
+    <string name="btn_starting">Iniciando…</string>
+    <string name="btn_buffering">Carregando…</string>
+    <string name="btn_stop">Parar</string>
+    <string name="btn_stopping">Parando…</string>
+    <string name="btn_waiting">Aguardando…</string>
+    <string name="input_port">Porta</string>
+    <string name="input_host">Origem</string>
+    <string name="play_error">Erro de reproducao:\n%1$s</string>
+    <string name="infinite">Infinito</string>
+    <string name="buffer_minimal">minimo</string>
+    <string name="input_buffer_size_ahead">Buffer máximo à frente</string>
+    <string name="input_buffer_size_behind">Buffer máximo atrás</string>
+    <string name="restart_on_error">Reiniciar se falhar</string>
+    <string name="sample_rate">Taxa de amostragem</string>
+    <string name="Channels">Canais</string>
+    <string name="Mono">Mono</string>
+    <string name="Stereo">Stereo</string>
+    <string name="timeout">Tempo esgotado</string>
+</resources>

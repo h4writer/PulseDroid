@@ -1,22 +1,19 @@
-package ru.dront78.pulsedroid;
+package at.kescher.pulsedroid.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.util.List;
 
-class BufferSizeAdapter extends BaseAdapter {
+import at.kescher.pulsedroid.R;
 
-    private final Context context;
+public class SimpleRowAdapter extends BaseAdapter {
     private final List<Integer> presets;
 
-    BufferSizeAdapter(Context context, List<Integer> presets) {
-        this.context = context;
+    public SimpleRowAdapter(List<Integer> presets) {
         this.presets = presets;
     }
 
@@ -48,22 +45,13 @@ class BufferSizeAdapter extends BaseAdapter {
         TextView contentText = view.findViewById(R.id.contentText);
 
         int item = getItem(position);
-        contentText.setText(formatBufferLength(item));
+        contentText.setText(formatEntry(item));
 
         return view;
     }
 
-    private String formatBufferLength(int item) {
-        if (item < 0) {
-            return context.getString(R.string.buffer_infinite);
-        }
-        if (item == 0) {
-            return context.getString(R.string.buffer_minimal);
-        }
-        DecimalFormat format = new DecimalFormat("");
-        format.setMinimumIntegerDigits(1);
-        format.setMaximumFractionDigits(3);
-        return format.format(item / 1000d) + "s";
+    protected String formatEntry(int item) {
+        return Integer.toString(item);
     }
 
     public int getItemPosition(int size) {

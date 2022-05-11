@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PulseDroid</string>
-    <string name="auto_start">Auto Start</string>
+    <string name="auto_start">Autostart</string>
     <string name="playback_service_status">PulseDroid Playback %1$s</string>
     <string name="playback_status_starting">Starting</string>
     <string name="playback_status_buffering">Buffering</string>
@@ -16,12 +16,17 @@
     <string name="btn_stop">Stop</string>
     <string name="btn_stopping">Stopping…</string>
     <string name="btn_waiting">Waiting…</string>
-    <string name="btn_exit">Exit</string>
     <string name="input_port">Port</string>
     <string name="input_host">Host</string>
     <string name="play_error">Playback error:\n%1$s</string>
-    <string name="buffer_infinite">infinite</string>
+    <string name="infinite">infinite</string>
     <string name="buffer_minimal">minimal</string>
     <string name="input_buffer_size_ahead">Max buffer ahead</string>
     <string name="input_buffer_size_behind">Max buffer behind</string>
+    <string name="restart_on_error">Restart on error</string>
+    <string name="sample_rate">Sample rate</string>
+    <string name="Channels">Channels</string>
+    <string name="Mono">Mono</string>
+    <string name="Stereo">Stereo</string>
+    <string name="timeout">Timeout</string>
 </resources>
